@@ -58,9 +58,9 @@ transaction_type_options = [
 # HELPERS
 # =============================
 def risk_band(score: float) -> str:
-    if score >= 0.75:
+    if score >= 0.475:
         return "High Risk"
-    elif score >= 0.40:
+    elif score >= 0.15:
         return "Medium Risk"
     return "Low Risk"
 
